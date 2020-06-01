@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Cross tab communication demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <script src="client.js"></script>
+  </head>
+  <body>
+    <h1>Cross tab communication demo</h1>
+
+    <section>
+      <h2>BroadcastChannel</h2>
+      <div>
+        <input id="broadcast-channel-send-message" type="text">
+        <button id="broadcast-channel-send-button">Send message</button>
+      </div>
+      <div>
+        <input id="broadcast-channel-received-message" type="text" placeholder="Received message" disabled>
+      </div>
+    </section>
+
+    <section>
+      <h2>SharedWorker</h2>
+      <div>
+        <input id="shared-worker-send-message" type="text" >
+        <button id="shared-worker-send-button">Send message</button>
+      </div>
+      <div>
+        <input id="shared-worker-received-message" type="text" placeholder="Received message" disabled>
+      </div>
+    </section>
+
+    <section>
+      <h2>LocalStorage</h2>
+      <div>
+        <input id="local-storage-send-message" type="text">
+        <button id="local-storage-send-button">Send message</button>
+      </div>
+      <div>
+        <input id="local-storage-received-message" type="text" placeholder="Received message" disabled>
+      </div>
+    </section>
+
+    <section>
+      <h2>WebSocket (SocketIO)</h2>
+      <div>
+        <input id="websocket-send-message" type="text" >
+        <button id="websocket-send-button">Send message</button>
+      </div>
+      <div>
+        <input id="websocket-received-message" type="text" placeholder="Received message" disabled>
+      </div>
+    </section>
+  </body>
+</html>
