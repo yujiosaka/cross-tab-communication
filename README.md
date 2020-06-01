@@ -17,17 +17,18 @@ $ npm run start
 
 ## Comparison
 
-|                   | Broadcast Channel | Shared Worker | LocalStorage | WebSocket (SocketIO) |
-|:-----------------:|:-----------------:|:-------------:|:------------:|:--------------------:|
-| Code simplicity   | ◎                 | ○             | ○            | ○                    |
-| Server load       | ◎                 | ◎             | ◎            | △                    |
-| Client load       | ◎                 | ◎             | △            | ○                    |
-| Chrome            | 54                | 4             | 4            | 10.13                |
-| Edge              | <=79              | 79            | 12           | ? (working)          |
-| Firefox           | 38                | 29            | 3.5          | 10.11                |
-| Internet Explorer | ×                 | ×             | 8            | 7                    |
-| Opera             | 41                | 10.6          | 10.5         | ? (working)          |
-| Safari            | ×                 | ×             | 4            | 10.13                |
+|                      | Broadcast Channel | Shared Worker | LocalStorage | WebSocket (SocketIO) |
+|:--------------------:|:-----------------:|:-------------:|:------------:|:--------------------:|
+| Code simplicity      | ◎                 | ○             | ○            | ○                    |
+| Server load          | ◎                 | ◎             | ◎            | △                    |
+| Client load          | ◎                 | ◎             | △            | ○                    |
+| Cross origin support | ×                 | ×             | ×            | ○                    |
+| Chrome               | 54                | 4             | 4            | 10.13                |
+| Edge                 | <=79              | 79            | 12           | ? (working)          |
+| Firefox              | 38                | 29            | 3.5          | 10.11                |
+| Internet Explorer    | ×                 | ×             | 8            | 7                    |
+| Opera                | 41                | 10.6          | 10.5         | ? (working)          |
+| Safari               | ×                 | ×             | 4            | 10.13                |
 
 ## Resources
 
